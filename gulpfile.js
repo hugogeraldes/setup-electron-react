@@ -10,14 +10,14 @@ function buildhtml() {
 
 // // 2. Compile CSS file and move them to the app folder
 function buildcss() {
-    return gulp.src('src/css/*.css')
+    return gulp.src(['src/css/*.css','node_modules/bootstrap/dist/*.min.css'])
         .pipe(css())
         .pipe(gulp.dest('app/'));
 };
 
 // // 3. Compile JS files and move them to the app folder
 function buildjs()  {
-    return gulp.src(['main.js', 'src/scripts/*.js'])
+    return gulp.src(['main.js', 'src/scripts/*.js','node_modules/jquery/dist/jquery.min.js'])
          .pipe(babel())
          .pipe(gulp.dest('app/'));
 };
