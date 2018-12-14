@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npm run build && npm run test",
     "build": "gulp build",
+    "uidev": "gulp serve",
     "test": "electron ."
   },
   "repository": "https://github.com/hugogeraldes/setup-electron-react",
@@ -23,12 +24,14 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.2",
+    "browser-sync": "^2.26.3",
     "electron": "^3.0.7",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-css": "^0.1.0",
     "gulp-run": "^1.7.1",
+    "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",

@@ -4,7 +4,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app.js';
+import TestForm from './TestForm';
 
 window.onload = () => {
-    ReactDOM.render(<App />, document.getElementById('app'));
+    ReactDOM.render(<TestForm></TestForm>, document.getElementById('app'));
 };
