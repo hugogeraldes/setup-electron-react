@@ -33,8 +33,10 @@
     "gulp-run": "^1.7.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
+    "materialize-css": "^1.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "sass": "^1.15.2",
     "webpack": "^4.27.1"
   },
   "dependencies": {

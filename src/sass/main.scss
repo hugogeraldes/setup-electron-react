@@ -1,5 +1,24 @@
-$bodycolor : #4a4a4a;
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
+
+
+$font: 'Calibri';
 body{
-    background-color: $bodycolor;
+    font-family: $font, Tahoma, Geneva, Verdana, sans-serif
 }
+
+.mynav{
+    height:30px;
+    padding: 0px;
+    #logoimage{
+        margin-bottom: 10px;
+        margin-left: 5px;
+        width:28px;
+        height:28px;
+    }
+    #logo {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+}
+

@@ -24,9 +24,19 @@ function buildjs()  {
          .pipe(gulp.dest('app/'));
 };
 
+// // 4. Compile SASS files and move them to the app folder
 function buildsass(){
     return gulp.src(['src/sass/*.scss'])
     .pipe(sass())
+    .pipe(gulp.dest('app/'))
+    .pipe(gulp.dest('UIMockup/build'))
+    .pipe(browserSync.stream());
+}
+
+// // 5. Copy image files and move them to the app folder
+
+function buildimages(){
+   return gulp.src(['src/images/*'])
     .pipe(gulp.dest('app/'))
     .pipe(gulp.dest('UIMockup/build'))
     .pipe(browserSync.stream());
@@ -42,6 +52,7 @@ function serve(){
 
     gulp.watch('src/sass/*.scss',function(){
         buildsass();
+        buildimages();
         browserSync.reload();
     });
     gulp.watch('UIMockup/uimock.html',function(){
@@ -52,4 +63,5 @@ function serve(){
 //exports.start= (cb) => { console.log('teste'); cb();};
 exports.serve = serve; 
 exports.buildsass = buildsass;
+exports.buildimages= buildimages;
 exports.build= gulp.parallel(buildhtml,buildcss,buildjs);
