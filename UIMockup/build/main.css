@@ -6317,7 +6317,8 @@ body {
 
 .mynav {
   height: 30px;
-  padding: 0px; }
+  padding: 0px;
+  box-shadow: 0px 4px 6px 0px #6d6d6d; }
   .mynav #logoimage {
     margin-bottom: 10px;
     margin-left: 5px;
@@ -6326,3 +6327,10 @@ body {
   .mynav #logo {
     margin-left: 10px;
     font-size: 20px; }
+
+.myfooter {
+  height: 30px;
+  box-shadow: 0px -4px 6px 0px #6d6d6d; }
+
+.myformborder {
+  border-style: groove; }

@@ -10,6 +10,7 @@ body{
 .mynav{
     height:30px;
     padding: 0px;
+    box-shadow: 0px 4px 6px 0px #6d6d6d;
     #logoimage{
         margin-bottom: 10px;
         margin-left: 5px;
@@ -22,3 +23,17 @@ body{
     }
 }
 
+.myfooter
+{
+    height: 30px;
+    box-shadow: 0px -4px 6px 0px #6d6d6d;
+}
+
+.myformborder
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dadada;
+    border-radius: 10px;
+
+}
